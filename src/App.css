@@ -1,0 +1,155 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+.login-form, .admin-dashboard {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+input[type="text"], input[type="password"], input[type="date"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.3rem 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #1f2937;
+  color: white;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background-color: #111827;
+}
+
+.logout-btn {
+  background-color: #dc2626;
+}
+
+.logout-btn:hover {
+  background-color: #b91c1c;
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.dashboard-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.client-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.client-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.client-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.card-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.card-carousel img {
+  height: 140px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card-carousel img:hover {
+  transform: scale(1.05);
+}
+
+.preview-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.preview-carousel img {
+  height: 150px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.preview-carousel img:hover {
+  transform: scale(1.05);
+}
+
+/* Image modal */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
